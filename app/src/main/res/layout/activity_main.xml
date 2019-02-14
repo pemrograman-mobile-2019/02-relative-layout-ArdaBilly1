@@ -4,17 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ff6347"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="15dp"
-        android:text="top" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:background="#ffff">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="15dp"
+            android:text="top" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="181dp"
+            android:layout_height="67dp"
+            android:layout_alignStart=""
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="82dp"
+            android:text="left above top" />
+    </RelativeLayout>
+
+
+
 
     <Button
         android:id="@+id/button1"
@@ -26,16 +51,6 @@
         android:layout_marginBottom="17dp"
         android:text="bottom" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="95dp"
-        android:text="Button" />
 
     <Button
         android:id="@+id/button3"
@@ -47,5 +62,6 @@
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="86dp"
         android:text="right above bottom" />
+
 
 </RelativeLayout>
